@@ -10,6 +10,6 @@ package trabalhopoo;
  * @author Victor
  */
 public class Aluno {
-    String nome;
+    private String nome;
     
 }
