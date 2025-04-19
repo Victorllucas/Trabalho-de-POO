@@ -1,5 +1,5 @@
+package trabalhopoo;
 
-import java.time.LocalDateTime;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -9,23 +9,24 @@ import java.time.LocalDateTime;
  *
  * @author Victor
  */
+import java.time.LocalDateTime;
 
-public class Curso {
+public class Usuario {
     private int id;
-    private String nome;
-    private String sigla;
-    private String tipo; // Ex.: "superior", "integrado", "concomitante"
+    private Pessoa pessoa; // Relacionamento com Pessoa
+    private Escola escola; // Relacionamento com Escola
+    private String tipo; // Ex.: "admin", "professor", "aluno"
     private LocalDateTime dataCriacao;
     private LocalDateTime dataModificacao;
 
     // Construtor
-    public Curso(int id, String nome, String sigla, String tipo) {
+    public Usuario(int id, Pessoa pessoa, Escola escola, String tipo) {
         this.id = id;
-        this.nome = nome;
-        this.sigla = sigla;
+        this.pessoa = pessoa;
+        this.escola = escola;
         this.tipo = tipo;
-        this.dataCriacao = LocalDateTime.now(); // Data e hora atual no momento da criação
-        this.dataModificacao = LocalDateTime.now(); // Data e hora atual no momento da modificação
+        this.dataCriacao = LocalDateTime.now(); // Data de criação
+        this.dataModificacao = LocalDateTime.now(); // Data de modificação
     }
 
     // Getters e Setters
@@ -38,21 +39,21 @@ public class Curso {
         atualizarDataModificacao();
     }
 
-    public String getNome() {
-        return nome;
+    public Pessoa getPessoa() {
+        return pessoa;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setPessoa(Pessoa pessoa) {
+        this.pessoa = pessoa;
         atualizarDataModificacao();
     }
 
-    public String getSigla() {
-        return sigla;
+    public Escola getEscola() {
+        return escola;
     }
 
-    public void setSigla(String sigla) {
-        this.sigla = sigla;
+    public void setEscola(Escola escola) {
+        this.escola = escola;
         atualizarDataModificacao();
     }
 
@@ -77,4 +78,3 @@ public class Curso {
         this.dataModificacao = LocalDateTime.now(); // Atualiza a data de modificação para o momento atual
     }
 }
-
