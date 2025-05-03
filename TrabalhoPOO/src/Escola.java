@@ -17,7 +17,7 @@ public class Escola {
     private String nome;
     private String cidade;
     private String telefone;
-    private LocalDateTime dataCriacao;
+    private final LocalDateTime dataCriacao;
     private LocalDateTime dataModificacao;
 
     // Construtor
