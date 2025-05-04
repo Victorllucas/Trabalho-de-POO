@@ -1,4 +1,4 @@
-package trabalhopoo;
+package TrabalhoPOO;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -9,6 +9,6 @@ package trabalhopoo;
  *
  * @author Victor
  */
-public class RegistroProfessor {
+public class RegistroProfessorDesc {
     
 }

@@ -1,4 +1,5 @@
-package src;
+package TrabalhoPOO;
+
 import java.time.LocalDateTime;
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license

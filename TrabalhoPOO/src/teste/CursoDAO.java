@@ -7,7 +7,7 @@
  *
  * @author Felipe
  */
-package trabalhopoo;
+package TrabalhoPOO;
 import java.util.ArrayList;
 import java.util.List;
 

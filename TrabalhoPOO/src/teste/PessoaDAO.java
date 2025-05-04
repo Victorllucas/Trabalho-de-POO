@@ -7,7 +7,8 @@
  *
  * @author Felipe
  */
-package src;
+package TrabalhoPOO;
+
 import java.util.ArrayList;
 import java.util.List;
 
